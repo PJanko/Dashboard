@@ -1,0 +1,184 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+@font-face {
+  font-family: Moon;
+  src: url(../fonts/moonbold.otf);
+}
+
+body {
+	background-color: #e50041;
+	overflow-x: hidden !important;
+	width: 100%;
+	max-width: 100%;
+}
+#logo {
+	margin-top: 50px;
+	display: block;
+}
+#logo img {
+	margin: 0 auto;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 0px;
+    width: 290px;
+    height: 100%;
+    margin-left: 0px;
+    overflow-y: auto;
+    background: #FFFFFF;
+}
+
+#header-wrapper {
+    z-index: 900;
+    top: 0;
+    margin-left: 290px;
+    margin-bottom: 0;
+    padding: 20px 50px;
+    width: calc(100% - 290px);
+    height: 270px;
+}
+
+#page-content-wrapper {
+    width: calc(100% - 290px);
+    margin-left: 290px;
+    padding: 0;
+    color: white;
+    padding: 50px 20px;
+}
+#page-content-wrapper .content {
+    padding: 0 50px;
+}
+
+/* Sidebar Styles */
+#sidebar-nav {
+	font-family: 'Moon', sans-serif;
+	width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#sidebar-nav li {
+	height: 60px;
+	box-sizing: border-box;
+	width: 100%;
+	border-left: 5px solid transparent;
+	transition: all 0.2s ease-in;
+}
+#sidebar-nav li:hover, .sidebar-nav li.active {
+	background: #f0eeef;
+	border-left-color: #e50041;
+}
+
+#sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+	color: #4A4A4A;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	padding-left: 60px;
+}
+
+#sidebar-nav li:hover a {
+    text-decoration: none;
+    color: #E40340;
+    background: rgba(255,255,255,0.2);
+}
+
+
+#sidebar-nav li a:active,
+#sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+form#searchform {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+form#searchform input[type=text] {
+	font-family: 'Moon', sans-serif;
+	height: 55px;
+	width: 100%;
+	border: 0;
+	padding-left: 37px;
+	color: #aaa;
+	-moz-box-shadow: 2px 2px 4px 0.5px #dddddd;
+	-webkit-box-shadow: 2px 2px 4px 0.5px #dddddd;
+	-o-box-shadow: 2px 2px 4px 0.5px #dddddd;
+	box-shadow: 2px 2px 4px 0.5px #dddddd;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#dddddd, Direction=134, Strength=4);
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+/* TOP NAV */
+#top-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#top-nav li {
+	display: inline-block;
+	padding: 25px 18px 0 18px;
+}
+#top-nav li a {
+	color: white;
+}
+#logo2 {
+	position: relative;
+	top: -31px;
+}
+
+/* login form */
+#loginform {
+	height: 300px;
+	width: 100%;
+    background: white;
+}
+
+.device-container {
+    margin-bottom: 5px;
+    width: 23%;
+    height: 200px;
+    background: white;
+    color: red;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+/*@media(min-width:768px) {
+    #wrapper {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    #sidebar-wrapper {
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 290px;
+    }
+
+    #page-content-wrapper {
+        margin-left: 275px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+*/

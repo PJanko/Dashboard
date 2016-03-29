@@ -1,0 +1,19 @@
+<!-- Page Content -->
+<div id="page-content-wrapper">
+
+  <form id="loginform">
+    <div class="form-group">
+        <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+        <input type="text" class="form-control input-lg text-center" ng-model="userData.username" placeholder="username">
+        <input type="email" class="form-control input-lg text-center" ng-model="userData.mail" placeholder="Email">
+        <input type="password" class="form-control input-lg text-center" ng-model="userData.password" placeholder="password">
+    </div>
+
+    <!-- createToDo() WILL CREATE NEW TODOS -->
+    <button type="submit" class="btn btn-primary btn-lg" ng-click="register()">Register</button>
+    <button type="submit" class="btn btn-primary btn-lg" ng-click="logIn()">Login</button>
+    <button type="submit" class="btn btn-primary btn-lg" ng-click="logout()">Logout</button>
+  </form>
+
+</div>
+<!-- /#page-content-wrapper -->

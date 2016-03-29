@@ -1,0 +1,24 @@
+<!-- Page Content -->
+<div id="page-content-wrapper">
+
+    <div class="form-group">
+        <!-- BIND THIS VALUE TO formData.text IN ANGULAR -->
+        <input type="number" min="1" max="100" step="1" class="form-control input-lg text-center" ng-model="handle.number" />
+        <button type="submit" class="btn btn-primary btn-lg" ng-click="create()">Create</button>
+    </div>
+
+        <a ng-repeat="device in devices" ng-controller="DeviceContainerCtrl" href="#/device/{{device}}">
+            <div class="device-container" >
+                <div>
+                    <div>{{summary.name}}</div>
+                    <div>{{summary.description}}</div>
+                    <div>Creation Date : {{summary.creationDate | date:'fullDate'}}</div>
+                </div>
+                    <div>Permissions : {{summary.permissions}}</div>
+                    <div>Users : {{summary.users}}</div>
+            </div>
+        </a>
+    </ul>
+
+</div>
+<!-- /#page-content-wrapper -->
