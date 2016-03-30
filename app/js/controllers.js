@@ -4,7 +4,7 @@
 
 var redControllers = angular.module('redControllers', []);
 
-var url = 'https://api.red.io';
+var url = 'https://user.red.io';
 
 redControllers.controller('HeaderCtrl', ['$scope', '$location', '$cookies', function ($scope, $location, $cookies) {
     $scope.$on('$locationChangeSuccess', function() {
@@ -153,6 +153,31 @@ redControllers.controller('DeviceDetailsCtrl',
             console.log(err);
         });
 
+    $http({ method: 'GET',
+            url: url + '/user/device/certificate/'+$scope.id,
+            headers: {
+                'Authorization': 'Bearer ' + $scope.token
+            }
+        }).success( function (data) {
+            console.log(data);
+        }).error( function (err) {
+            console.log(err);
+        });
+
+    $http({ method: 'POST',
+            url: url + '/user/device/certificate/passphrase',
+            headers: {
+                'Authorization': 'Bearer ' + $scope.token
+            },
+            data : {
+                id : $scope.id,
+                password : 'pierre'
+            }
+        }).success( function (data) {
+            console.log(data);
+        }).error( function (err) {
+            console.log(err);
+        });
 }]);
 
 
