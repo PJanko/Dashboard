@@ -50,3 +50,11 @@ phonecatAnimations.animation('.phone', function() {
     removeClass: animateDown
   };
 });
+
+jQuery(document).ready(function() {
+	jQuery("body").delegate('#sidebar-nav a', 'click', function() {
+		console.log(jQuery(this));
+		jQuery("#sidebar-nav li").removeClass("active");
+		jQuery(this).parent().addClass('active');
+	});
+});
